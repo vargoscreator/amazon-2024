@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body"> 
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" href="index.html">
+                    <img src="img/logo.svg" alt="Logo">
+                </a>
+
+                <nav class="header__menu">
+                    <ul>
+                        <li>
+                            <a class="header__link" href="#program">Программа</a>
+                        </li>
+                        <li>
+                            <a class="header__link" href="#bonus">Бонус</a>
+                        </li>
+                        <li>
+                            <a class="header__link" href="#leader">Спикер</a>
+                        </li>
+                        <li>
+                            <a class="header__link" href="#reviews">Отзывы</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__end">
+                    <div class="header__end-item">
+                        <p class="header__end-name">Дата:</p>
+                        <p class="header__end-date">10 АВГУСТА в 19:00 по Киеву</p>
+                    </div>
+                    <div class="header__end-item">
+                        <p class="header__end-name">До начала:</p>
+                        <p class="header__end-date">02 часа 10 минут</p>
+                    </div>
+                </div>
+
+                <span class="header__burger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" viewBox="0 0 21 16" fill="none">
+                        <rect x="0.539062" width="20" height="2" rx="1" fill="white"/>
+                        <rect x="0.539062" y="7" width="20" height="2" rx="1" fill="white"/>
+                        <rect x="0.539062" y="14" width="20" height="2" rx="1" fill="white"/>
+                      </svg>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <div class="hero__content">
+                        <p class="hero__name name" data-aos="fade-up" data-aos-delay="0">100 000+ людей со всего мира прошли этот мастер-класс</p>
+                        <h1 class="hero__title" data-aos="fade-up" data-aos-delay="50">Как запустить <span class="color-aquamarine">бизнес <br>на Amazon в 2024</span> с заработком от $10 000</h1>
+                        <p class="hero__descr" data-aos="fade-up" data-aos-delay="100">За 2 часа вы бесплатно получите 5-шаговый план действий, чтобы в течение 7 дней запустить свой бизнес на Amazon и зарабатывать <strong>$2000</strong>, <strong>$5000</strong> и даже <strong>$10 000</strong> в месяц...</p>
+                        <form class="hero__form" action="#">
+                            <span id="register"></span>
+                            <input class="hero__form-input" name="name" type="text" placeholder="Ім'я" required data-aos="fade-up" data-aos-delay="150">
+                            <input class="hero__form-input" name="email" type="email" placeholder="example@gmai.com" required data-aos="fade-up" data-aos-delay="200">
+                            <span class="hero__form-email" data-aos="fade-up" data-aos-delay="250">
+                                <span class="hero__input-icon">
+                                    <img src="img/Flag-Ukraine.webp" alt="Flag-Ukraine">
+                                </span>
+                                <input class="hero__form-input" name="phone" type="tel" id="phone" maxlength="20" autocomplete="off" size="40" required placeholder="+38(098) 123-45-67" />
+                            </span>
+                            <span data-aos="fade-up" data-aos-delay="300">
+                                <button class="hero__form-btn btn" type="submit">
+                                    ЗАРЕГИСТРИРОВАТЬСЯ
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                                        <path d="M2.87444 11.4996C2.87444 11.309 2.95016 11.1262 3.08495 10.9914C3.21974 10.8566 3.40256 10.7809 3.59319 10.7809L17.6708 10.7809L12.4284 5.53937C12.3616 5.47259 12.3087 5.39331 12.2725 5.30606C12.2364 5.21881 12.2178 5.12529 12.2178 5.03085C12.2178 4.93641 12.2364 4.84289 12.2725 4.75564C12.3087 4.66839 12.3616 4.58911 12.4284 4.52233C12.4952 4.45555 12.5745 4.40258 12.6617 4.36644C12.749 4.3303 12.8425 4.3117 12.9369 4.3117C13.0314 4.3117 13.1249 4.3303 13.2121 4.36644C13.2994 4.40258 13.3787 4.45555 13.4455 4.52233L19.9142 10.9911C19.981 11.0578 20.034 11.1371 20.0702 11.2244C20.1064 11.3116 20.125 11.4051 20.125 11.4996C20.125 11.5941 20.1064 11.6876 20.0702 11.7748C20.034 11.8621 19.981 11.9414 19.9142 12.0081L13.4455 18.4769C13.3106 18.6117 13.1277 18.6875 12.9369 18.6875C12.7462 18.6875 12.5633 18.6117 12.4284 18.4769C12.2936 18.342 12.2178 18.1591 12.2178 17.9684C12.2178 17.7776 12.2936 17.5947 12.4284 17.4598L17.6708 12.2184L3.59319 12.2184C3.40256 12.2184 3.21974 12.1426 3.08495 12.0078C2.95016 11.873 2.87444 11.6902 2.87444 11.4996Z" fill="black"/>
+                                      </svg>
+                                </button>
+                            </span>
+                        </form>
+                    </div>
+                    <div class="hero__image">
+                        <img src="img/hero.webp" alt="hero">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ideal">
+            <div class="container">
+                <div class="ideal__inner">
+                    <div class="ideal__content">
+                        <h2 class="ideal__title title" data-aos="fade-up" data-aos-delay="0">Пожалуй, идеальный онлайн-бизнес!
+                            <span class="title-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="97" viewBox="0 0 42 97" fill="none">
+                                    <path d="M38.5543 31.8426C42.1564 19.9419 24.7069 26.6456 19.8133 28.3049C13.2309 30.5368 8.00036 33.4008 6.59258 40.6613C5.51215 46.2335 13.0402 48.0017 16.8762 49.2067C24.2997 51.5388 32.3625 54.5014 35.9345 62.066C38.5328 67.5686 38.1795 73.2264 32.2709 75.7579C22.908 79.7693 -1.46297 75.9623 3.23089 61.0203M24.9855 24.1248C26.7948 18.3654 28.1635 12.2998 28.6781 6.26912C30.0379 -9.66395 27.4423 38.374 24.1988 54.0324C21.6819 66.1828 18.4762 77.8878 16.7853 90.178L16.7632 90.3389C16.1719 94.6341 15.9439 96.2907 18.7911 91.8879" stroke="#5BF0A5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </h2>
+                        <p class="ideal__descr" data-aos="fade-up" data-aos-delay="50">
+                            Это бизнес, который ведут <span class="color-aquamarine">9.8 млн людей в мире.</span> Пока вы это читаете, они зарабатывают, зарабатывают, зарабатывают. Это просто и выгодно, в сравнении с другими видами заработка в интернете.
+                            <br><br>
+                            Amazon — это более 50% всей электронной коммерции. Каждый год рынок растёт на 20–30%. <span class="color-aquamarine">Покупатели — самые платёжеспособные в мире.</span> Не вредничают: «Это дорого» или «Мы подумаем». А покупают, покупают, покупают.
+                        </p>
+                        <p class="ideal__descr" data-aos="fade-up" data-aos-delay="100">
+                            <span class="color-aquamarine">Вам не нужно обрабатывать заказы и общаться с покупателями.</span> Не нужно хранить товар, заниматься его отправкой, оформлением и декларированием. Все эти хлопоты и процессы берёт на себя AMAZON.
+                            <br><br>
+                            Вы просто определяетесь с товаром. Договариваетесь с поставщиками. Создаёте страницы товара <span class="color-aquamarine">на торговой площадке AMAZON.</span>
+                        </p>
+                        <p class="ideal__end" data-aos="fade-up" data-aos-delay="150">И начинаете продавать, продавать, продавать.</p>
+                    </div>
+                    <div class="ideal__image" data-aos="fade-up" data-aos-delay="50">
+                        <img src="img/ideal.webp" alt="ideal">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why">
+            <div class="container">
+                <div class="why__inner">
+                    <h2 class="why__title title" data-aos="fade-up" data-aos-delay="0">Идеальный бизнес
+                        <span class="title-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="97" viewBox="0 0 42 97" fill="none">
+                                <path d="M38.5543 31.8426C42.1564 19.9419 24.7069 26.6456 19.8133 28.3049C13.2309 30.5368 8.00036 33.4008 6.59258 40.6613C5.51215 46.2335 13.0402 48.0017 16.8762 49.2067C24.2997 51.5388 32.3625 54.5014 35.9345 62.066C38.5328 67.5686 38.1795 73.2264 32.2709 75.7579C22.908 79.7693 -1.46297 75.9623 3.23089 61.0203M24.9855 24.1248C26.7948 18.3654 28.1635 12.2998 28.6781 6.26912C30.0379 -9.66395 27.4423 38.374 24.1988 54.0324C21.6819 66.1828 18.4762 77.8878 16.7853 90.178L16.7632 90.3389C16.1719 94.6341 15.9439 96.2907 18.7911 91.8879" stroke="#5BF0A5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </h2>
+                    <div class="why__block">
+                        <div class="why__item" data-aos="fade-up" data-aos-delay="50">
+                            <p class="why__descr">Если у вас есть <strong>2-3 <br>свободных часа</strong> в день</p>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 26 22" fill="none">
+                                    <path d="M25.5 1H1V21.5" stroke="black"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="26" viewBox="0 0 21 26" fill="none">
+                                    <path d="M20.5 25.5V1L0 1" stroke="black"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="25" viewBox="0 0 22 25" fill="none">
+                                    <path d="M1 0L1 24.5H21.5" stroke="black"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="21" viewBox="0 0 25 21" fill="none">
+                                    <path d="M0 20.5L24.5 20.5L24.5 0" stroke="black"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="why__item" data-aos="fade-up" data-aos-delay="100">
+                            <p class="why__descr">Если вы хотите <strong>зарабатывать <br>в твёрдой валюте</strong></p>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 26 22" fill="none">
+                                    <path d="M25.5 1H1V21.5" stroke="black"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="26" viewBox="0 0 21 26" fill="none">
+                                    <path d="M20.5 25.5V1L0 1" stroke="black"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="25" viewBox="0 0 22 25" fill="none">
+                                    <path d="M1 0L1 24.5H21.5" stroke="black"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="21" viewBox="0 0 25 21" fill="none">
+                                    <path d="M0 20.5L24.5 20.5L24.5 0" stroke="black"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="why__item" data-aos="fade-up" data-aos-delay="150">
+                            <p class="why__descr">Если хотите <strong>работать из любой точки мира</strong> и стать на 100% независимыми</p>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 26 22" fill="none">
+                                    <path d="M25.5 1H1V21.5" stroke="black"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="26" viewBox="0 0 21 26" fill="none">
+                                    <path d="M20.5 25.5V1L0 1" stroke="black"/>
+                                </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="25" viewBox="0 0 22 25" fill="none">
+                                    <path d="M1 0L1 24.5H21.5" stroke="black"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="21" viewBox="0 0 25 21" fill="none">
+                                    <path d="M0 20.5L24.5 20.5L24.5 0" stroke="black"/>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="program">
+            <span id="program"></span>
+            <div class="container">
+                <div class="program__inner">
+                    <h2 class="program__title title" data-aos="fade-up" data-aos-delay="0" data-aos-anchor-placement="top-bottom">Изучите программу мастер-класса:</h2>
+                    <div class="program__block">
+                        <div class="program__item" data-aos="fade-up" data-aos-delay="50" data-aos-anchor-placement="top-bottom">
+                            <p class="program__descr" style="max-width: 416px;">Как работает товарный бизнес на AMAZON в 2024 году, и как он будет работать в ближайшие 3 года.</p>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="26" viewBox="0 0 31 26" fill="none">
+                                    <path d="M30.7178 1.3125H1V25.0125" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+                                    <path d="M25.5742 29.3244L25.5742 1L0.70828 1" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+                                    <path d="M1.42578 0.17561L1.42578 28.5H26.2917" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="25" viewBox="0 0 31 25" fill="none">
+                                    <path d="M0.28217 24.1875L30 24.1875L30 0.487498" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                        </div>
+                        <div class="program__item" data-aos="fade-up" data-aos-delay="100" data-aos-anchor-placement="top-bottom">
+                            <p class="program__descr" style="max-width: 518px;">Тактика поиска поставщиков в Китае и <br>США, с которыми можно без риска построить долгосрочные и выгодные отношения.</p>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="26" viewBox="0 0 31 26" fill="none">
+                                    <path d="M30.7178 1.3125H1V25.0125" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+                                    <path d="M25.5742 29.3244L25.5742 1L0.70828 1" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+                                    <path d="M1.42578 0.17561L1.42578 28.5H26.2917" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="25" viewBox="0 0 31 25" fill="none">
+                                    <path d="M0.28217 24.1875L30 24.1875L30 0.487498" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                        </div>
+                        <div class="program__item" data-aos="fade-up" data-aos-delay="150" data-aos-anchor-placement="top-bottom">
+                            <p class="program__descr" style="max-width: 462px;">Примеры 20 товаров, которые можно быстро и стабильно продавать с высокой наценкой, даже не имея их в наличии.</p>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="26" viewBox="0 0 31 26" fill="none">
+                                    <path d="M30.7178 1.3125H1V25.0125" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+                                    <path d="M25.5742 29.3244L25.5742 1L0.70828 1" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+                                    <path d="M1.42578 0.17561L1.42578 28.5H26.2917" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="25" viewBox="0 0 31 25" fill="none">
+                                    <path d="M0.28217 24.1875L30 24.1875L30 0.487498" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                        </div>
+                        <div class="program__item" data-aos="fade-up" data-aos-delay="200" data-aos-anchor-placement="top-bottom">
+                            <p class="program__descr" style="max-width: 475px;">Система старта бизнеса на AMAZON с минимальными начальными инвестициями — $300 и стартом продаж на 14-й день.</p>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="26" viewBox="0 0 31 26" fill="none">
+                                    <path d="M30.7178 1.3125H1V25.0125" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+                                    <path d="M25.5742 29.3244L25.5742 1L0.70828 1" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+                                    <path d="M1.42578 0.17561L1.42578 28.5H26.2917" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="25" viewBox="0 0 31 25" fill="none">
+                                    <path d="M0.28217 24.1875L30 24.1875L30 0.487498" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                        </div>
+                        <div class="program__item" data-aos="fade-up" data-aos-delay="250" data-aos-anchor-placement="top-bottom">
+                            <p class="program__descr" style="max-width: 456px;">Разбор 4 топ-стратегий продаж, которые позволят быстро продавать ходовой товар и масштабировать оборот.</p>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="26" viewBox="0 0 31 26" fill="none">
+                                    <path d="M30.7178 1.3125H1V25.0125" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+                                    <path d="M25.5742 29.3244L25.5742 1L0.70828 1" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+                                    <path d="M1.42578 0.17561L1.42578 28.5H26.2917" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="25" viewBox="0 0 31 25" fill="none">
+                                    <path d="M0.28217 24.1875L30 24.1875L30 0.487498" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                        </div>
+                        <div class="program__item" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
+                            <p class="program__descr" style="max-width: 501px;">Как находить прибыльный товар, который будет приносить высокий доход, даже если его продают конкуренты.</p>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="26" viewBox="0 0 31 26" fill="none">
+                                    <path d="M30.7178 1.3125H1V25.0125" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+                                    <path d="M25.5742 29.3244L25.5742 1L0.70828 1" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+                                    <path d="M1.42578 0.17561L1.42578 28.5H26.2917" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="25" viewBox="0 0 31 25" fill="none">
+                                    <path d="M0.28217 24.1875L30 24.1875L30 0.487498" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                        </div>
+                        <div class="program__item" data-aos="fade-up" data-aos-delay="350" data-aos-anchor-placement="top-bottom">
+                            <p class="program__descr" style="max-width: 501px;">Обзор 5 сервисов, помогающих анализировать коммерческую привлекательность товаров для продажи.</p>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="26" viewBox="0 0 31 26" fill="none">
+                                    <path d="M30.7178 1.3125H1V25.0125" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+                                    <path d="M25.5742 29.3244L25.5742 1L0.70828 1" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+                                    <path d="M1.42578 0.17561L1.42578 28.5H26.2917" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="25" viewBox="0 0 31 25" fill="none">
+                                    <path d="M0.28217 24.1875L30 24.1875L30 0.487498" stroke="#5BF0A5" stroke-width="1.5"/>
+                                  </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="program__image" data-aos="fade-up" data-aos-delay="50">
+                        <img src="img/ideal.webp" alt="program">
+                    </div>
+                </div>
+            </div>
+
+            <div class="sliderLogo" data-aos="fade-up" data-aos-delay="50">
+                <div class="sliderLogo__block">
+                    <div class="sliderLogo__block-content">
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                             <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+    
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="sliderLogo__block">
+                    <div class="sliderLogo__block-content">
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                             <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+    
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">  
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner">
+            <div class="container">
+                <div class="banner__inner">
+                    <p class="banner__name name" data-aos="fade-up" data-aos-delay="0">Вы получаете пошаговый план действий: Бери, внедряй и начинай зарабатывать.</p>
+                    <h2 class="banner__title title" data-aos="fade-up" data-aos-delay="50">План действий, благодаря которому <br><span class="color-aquamarine">5000+</span> людей уже зарабатывают на AMAZON</h2>
+                    <a class="banner__btn btn" href="#register" data-aos="fade-up" data-aos-delay="100">
+                        ЗАРЕГИСТРИРОВАТЬСЯ
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M3.99921 15.9994C3.99921 15.7342 4.10457 15.4799 4.29211 15.2923C4.47964 15.1048 4.734 14.9994 4.99921 14.9994L24.5855 14.9994L17.2917 7.70694C17.1988 7.61403 17.1251 7.50373 17.0748 7.38234C17.0245 7.26095 16.9987 7.13084 16.9987 6.99944C16.9987 6.86805 17.0245 6.73794 17.0748 6.61655C17.1251 6.49515 17.1988 6.38485 17.2917 6.29194C17.3846 6.19903 17.4949 6.12533 17.6163 6.07505C17.7377 6.02477 17.8678 5.99889 17.9992 5.99889C18.1306 5.99889 18.2607 6.02477 18.3821 6.07505C18.5035 6.12533 18.6138 6.19903 18.7067 6.29194L27.7067 15.2919C27.7997 15.3848 27.8734 15.4951 27.9238 15.6165C27.9741 15.7379 28 15.868 28 15.9994C28 16.1309 27.9741 16.261 27.9238 16.3824C27.8734 16.5038 27.7997 16.6141 27.7067 16.7069L18.7067 25.7069C18.5191 25.8946 18.2646 26 17.9992 26C17.7338 26 17.4794 25.8946 17.2917 25.7069C17.1041 25.5193 16.9987 25.2648 16.9987 24.9994C16.9987 24.7341 17.1041 24.4796 17.2917 24.2919L24.5855 16.9994L4.99921 16.9994C4.734 16.9994 4.47964 16.8941 4.29211 16.7066C4.10457 16.519 3.99921 16.2647 3.99921 15.9994Z" fill="black"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="leader">
+            <span id="leader"></span>
+            <div class="container">
+                <div class="leader__inner">
+                    <div class="leader__content">
+                        <p class="leader__name name" data-aos="fade-up" data-aos-delay="0">Кто ведущий мастер-класса?</p>
+                        <h3 class="leader__title title" data-aos="fade-up" data-aos-delay="50">Максим Авдеев</h3>
+                        <div class="leader__block">
+                            <div class="leader__item" data-aos="fade-up" data-aos-delay="100">
+                                <p class="leader__descr">Основатель <strong class="color-aquamarine">LEVEL Consulting Group</strong></p>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="26" viewBox="0 0 31 26" fill="none">
+                                        <path d="M30.7178 1.3125H1V25.0125" stroke="#5BF0A5" stroke-width="1.5"/>
+                                      </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+                                        <path d="M25.5742 29.3244L25.5742 1L0.70828 1" stroke="#5BF0A5" stroke-width="1.5"/>
+                                      </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+                                        <path d="M1.42578 0.17561L1.42578 28.5H26.2917" stroke="#5BF0A5" stroke-width="1.5"/>
+                                      </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="25" viewBox="0 0 31 25" fill="none">
+                                        <path d="M0.28217 24.1875L30 24.1875L30 0.487498" stroke="#5BF0A5" stroke-width="1.5"/>
+                                      </svg>
+                                </span>
+                            </div>
+                            <div class="leader__item" data-aos="fade-up" data-aos-delay="150">
+                                <p class="leader__descr"><strong class="color-aquamarine">7+ лет</strong> в онлайн-бизнесе</p>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="26" viewBox="0 0 31 26" fill="none">
+                                        <path d="M30.7178 1.3125H1V25.0125" stroke="#5BF0A5" stroke-width="1.5"/>
+                                      </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+                                        <path d="M25.5742 29.3244L25.5742 1L0.70828 1" stroke="#5BF0A5" stroke-width="1.5"/>
+                                      </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+                                        <path d="M1.42578 0.17561L1.42578 28.5H26.2917" stroke="#5BF0A5" stroke-width="1.5"/>
+                                      </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="25" viewBox="0 0 31 25" fill="none">
+                                        <path d="M0.28217 24.1875L30 24.1875L30 0.487498" stroke="#5BF0A5" stroke-width="1.5"/>
+                                      </svg>
+                                </span>
+                            </div>
+                            <div class="leader__item" data-aos="fade-up" data-aos-delay="200">
+                                <p class="leader__descr"><strong class="color-aquamarine">Эксперт по e-commerce</strong> на рынке США</p>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="26" viewBox="0 0 31 26" fill="none">
+                                        <path d="M30.7178 1.3125H1V25.0125" stroke="#5BF0A5" stroke-width="1.5"/>
+                                      </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+                                        <path d="M25.5742 29.3244L25.5742 1L0.70828 1" stroke="#5BF0A5" stroke-width="1.5"/>
+                                      </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+                                        <path d="M1.42578 0.17561L1.42578 28.5H26.2917" stroke="#5BF0A5" stroke-width="1.5"/>
+                                      </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="25" viewBox="0 0 31 25" fill="none">
+                                        <path d="M0.28217 24.1875L30 24.1875L30 0.487498" stroke="#5BF0A5" stroke-width="1.5"/>
+                                      </svg>
+                                </span>
+                            </div>
+                            <div class="leader__item" data-aos="fade-up" data-aos-delay="250">
+                                <p class="leader__descr">Команда из <strong class="color-aquamarine">40 человек</strong></p>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="26" viewBox="0 0 31 26" fill="none">
+                                        <path d="M30.7178 1.3125H1V25.0125" stroke="#5BF0A5" stroke-width="1.5"/>
+                                      </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+                                        <path d="M25.5742 29.3244L25.5742 1L0.70828 1" stroke="#5BF0A5" stroke-width="1.5"/>
+                                      </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+                                        <path d="M1.42578 0.17561L1.42578 28.5H26.2917" stroke="#5BF0A5" stroke-width="1.5"/>
+                                      </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="25" viewBox="0 0 31 25" fill="none">
+                                        <path d="M0.28217 24.1875L30 24.1875L30 0.487498" stroke="#5BF0A5" stroke-width="1.5"/>
+                                      </svg>
+                                </span>
+                            </div>
+                            <div class="leader__item" data-aos="fade-up" data-aos-delay="300">
+                                <p class="leader__descr">Годовой оборот компаний — <strong class="color-aquamarine">$2 млн</strong></p>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="26" viewBox="0 0 31 26" fill="none">
+                                        <path d="M30.7178 1.3125H1V25.0125" stroke="#5BF0A5" stroke-width="1.5"/>
+                                      </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+                                        <path d="M25.5742 29.3244L25.5742 1L0.70828 1" stroke="#5BF0A5" stroke-width="1.5"/>
+                                      </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+                                        <path d="M1.42578 0.17561L1.42578 28.5H26.2917" stroke="#5BF0A5" stroke-width="1.5"/>
+                                      </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="25" viewBox="0 0 31 25" fill="none">
+                                        <path d="M0.28217 24.1875L30 24.1875L30 0.487498" stroke="#5BF0A5" stroke-width="1.5"/>
+                                      </svg>
+                                </span>
+                            </div>
+                            <div class="leader__item" data-aos="fade-up" data-aos-delay="350">
+                                <p class="leader__descr"><strong class="color-aquamarine">300 000+</strong> ед. товаров продано</p>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="26" viewBox="0 0 31 26" fill="none">
+                                        <path d="M30.7178 1.3125H1V25.0125" stroke="#5BF0A5" stroke-width="1.5"/>
+                                      </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+                                        <path d="M25.5742 29.3244L25.5742 1L0.70828 1" stroke="#5BF0A5" stroke-width="1.5"/>
+                                      </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" viewBox="0 0 27 30" fill="none">
+                                        <path d="M1.42578 0.17561L1.42578 28.5H26.2917" stroke="#5BF0A5" stroke-width="1.5"/>
+                                      </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="25" viewBox="0 0 31 25" fill="none">
+                                        <path d="M0.28217 24.1875L30 24.1875L30 0.487498" stroke="#5BF0A5" stroke-width="1.5"/>
+                                      </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="leader__box" data-aos="fade-up" data-aos-delay="50">
+                        <div class="leader__image">
+                            <img src="img/leader.webp" alt="leader">
+                            <img src="img/leader-mobile.webp" alt="leader">
+                        </div>
+                        <p class="leader__box-name" data-aos="fade-up" data-aos-delay="100">Только в 2024 году  Максим запустил более <strong class="color-aquamarine">50 новых продуктов</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sliderLogo" data-aos="fade-up" data-aos-delay="50">
+                <div class="sliderLogo__block">
+                    <div class="sliderLogo__block-content">
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                             <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+    
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="sliderLogo__block">
+                    <div class="sliderLogo__block-content">
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                             <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+    
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">  
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                        <div class="sliderLogo__item">
+                            <img src="img/logo-2.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <span id="reviews"></span>
+            <div class="container">
+                <div class="reviews__inner">
+                    <p class="reviews__name name" data-aos="fade-up" data-aos-delay="0">5000+ клиентов, прошедших обучение Максима</p>
+                    <h2 class="reviews__title title" data-aos="fade-up" data-aos-delay="50">Запустили бизнес на AMAZON и уже <span class="color-aquamarine">зарабатывают от $2000</span> каждый месяц. <br>Такие же люди, как и вы.</h2>
+                    <div class="reviews__content" data-aos="fade-up" data-aos-delay="100">
+                        <div class="reviews__prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="53" viewBox="0 0 30 53" fill="none">
+                                <path d="M28 2L3 26.5L28 51" stroke="black" stroke-width="4"/>
+                              </svg>
+                        </div>
+                        <div class="reviews__slider">
+                            <div class="swiper-wrapper">
+                                <div class="reviews__slide swiper-slide">
+                                    <div class="reviews__image">
+                                        <img src="img/slider/1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="reviews__slide swiper-slide">
+                                    <div class="reviews__image">
+                                        <img src="img/slider/2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="reviews__slide swiper-slide">
+                                    <div class="reviews__image">
+                                        <img src="img/slider/1.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="53" viewBox="0 0 30 53" fill="none">
+                                <path d="M2 51L27 26.5L2 2" stroke="black" stroke-width="4"/>
+                            </svg>
+                        </div>
+                    </div>         
+                    
+                    <div class="reviews__block" data-aos="fade-up" data-aos-delay="0">
+                        <p class="reviews__block-name title" data-aos="fade-up" data-aos-delay="50">Они так же не знали, как и с чего начинать.</p>
+                        <p class="reviews__block-descr" data-aos="fade-up" data-aos-delay="100">Однако хотели заняться товарным бизнесом и хорошо зарабатывать, находясь в своей зоне комфорта.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="register">
+            <span id="bonus"></span>
+            <div class="container">
+                <div class="register__inner">
+                    <div class="register__content">
+                        <p class="register__name name color-aquamarine" data-aos="fade-up" data-aos-delay="0">100 000+ людей со всего мира прошли этот мастер-класс</p>
+                        <h2 class="register__title title" data-aos="fade-up" data-aos-delay="50">Регистрируйтесь прямо сейчас</h2>
+                        <p class="register__descr" data-aos="fade-up" data-aos-delay="100"><strong class="color-aquamarine">И получите супер-бонус "Карта бизнеса на Amazon с нуля до первой $1000"</strong>, чтобы еще эффективней подготовиться к нашему мастер-классу.</p>
+                        <a class="register__btn btn" href="#register" data-aos="fade-up" data-aos-delay="50">
+                            ЗАРЕГИСТРИРОВАТЬСЯ
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                                <path d="M2.87444 11.4996C2.87444 11.309 2.95016 11.1262 3.08495 10.9914C3.21974 10.8566 3.40256 10.7809 3.59319 10.7809L17.6708 10.7809L12.4284 5.53937C12.3616 5.47259 12.3087 5.39331 12.2725 5.30606C12.2364 5.21881 12.2178 5.12529 12.2178 5.03085C12.2178 4.93641 12.2364 4.84289 12.2725 4.75564C12.3087 4.66839 12.3616 4.58911 12.4284 4.52233C12.4952 4.45555 12.5745 4.40258 12.6617 4.36644C12.749 4.3303 12.8425 4.3117 12.9369 4.3117C13.0314 4.3117 13.1249 4.3303 13.2121 4.36644C13.2994 4.40258 13.3787 4.45555 13.4455 4.52233L19.9142 10.9911C19.981 11.0578 20.034 11.1371 20.0702 11.2244C20.1064 11.3116 20.125 11.4051 20.125 11.4996C20.125 11.5941 20.1064 11.6876 20.0702 11.7748C20.034 11.8621 19.981 11.9414 19.9142 12.0081L13.4455 18.4769C13.3106 18.6117 13.1277 18.6875 12.9369 18.6875C12.7462 18.6875 12.5633 18.6117 12.4284 18.4769C12.2936 18.342 12.2178 18.1591 12.2178 17.9684C12.2178 17.7776 12.2936 17.5947 12.4284 17.4598L17.6708 12.2184L3.59319 12.2184C3.40256 12.2184 3.21974 12.1426 3.08495 12.0078C2.95016 11.873 2.87444 11.6902 2.87444 11.4996Z" fill="black"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="register__image" data-aos="fade-up" data-aos-delay="50">
+                        <img src="img/ideal.webp" alt="register">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popup">
+            <div class="container">
+                <div class="popup__inner">
+                    <div class="popup__logo">
+                        <img src="img/logo-2.svg" alt="logo">
+                    </div>
+                    <div class="popup__box">
+                        <div class="popup__block">
+                            <div class="popup__top">
+                                <p class="popup__top-name">Регистрация почти завершена</p>
+                                <p class="popup__top-name">50%</p>
+                            </div>
+                            <span class="popup__line"></span>
+
+                            <div class="popup__content">
+                                <h2 class="popup__title title">Ваш супер-бонус "Карта бизнеса на Amazon с нуля до первой $1000" <span class="color-aquamarine">уже на почте!</span></h2>
+                                <p class="popup__descr">Перейдите в Telegram, чтобы получить больше практического контента перед мастер-классом</p>
+                                <a class="popup__link btn" href="#">
+                                    ПЕРЕЙТИ В ТЕЛЕГРАМ
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                                        <path d="M2.87444 11.4996C2.87444 11.309 2.95016 11.1262 3.08495 10.9914C3.21974 10.8566 3.40256 10.7809 3.59319 10.7809L17.6708 10.7809L12.4284 5.53937C12.3616 5.47259 12.3087 5.39331 12.2725 5.30606C12.2364 5.21881 12.2178 5.12529 12.2178 5.03085C12.2178 4.93641 12.2364 4.84289 12.2725 4.75564C12.3087 4.66839 12.3616 4.58911 12.4284 4.52233C12.4952 4.45555 12.5745 4.40258 12.6617 4.36644C12.749 4.3303 12.8425 4.3117 12.9369 4.3117C13.0314 4.3117 13.1249 4.3303 13.2121 4.36644C13.2994 4.40258 13.3787 4.45555 13.4455 4.52233L19.9142 10.9911C19.981 11.0578 20.034 11.1371 20.0702 11.2244C20.1064 11.3116 20.125 11.4051 20.125 11.4996C20.125 11.5941 20.1064 11.6876 20.0702 11.7748C20.034 11.8621 19.981 11.9414 19.9142 12.0081L13.4455 18.4769C13.3106 18.6117 13.1277 18.6875 12.9369 18.6875C12.7462 18.6875 12.5633 18.6117 12.4284 18.4769C12.2936 18.342 12.2178 18.1591 12.2178 17.9684C12.2178 17.7776 12.2936 17.5947 12.4284 17.4598L17.6708 12.2184L3.59319 12.2184C3.40256 12.2184 3.21974 12.1426 3.08495 12.0078C2.95016 11.873 2.87444 11.6902 2.87444 11.4996Z" fill="black"/>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <p class="popup__end title">Многие ценные бонусы Вы получите прямо во время онлайн-трансляции мастер-класса, не пропустите!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a class="footer__link" href="index.html">
+                    <img src="img/logo.svg" alt="Logo">
+                </a>
+
+                <div class="footer__content">
+                    <p class="footer__content-descr">Copyright 2024 Level Consulting Group </p>
+                    <a class="footer__content-descr" href="#">Политика конфиконфиденциальности</a>
+                </div>
+
+                <div class="footer__social">
+                    <a class="footer__social-item" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M19.5 10C19.5 4.775 15.225 0.5 10 0.5C4.775 0.5 0.5 4.775 0.5 10C0.5 14.75 3.94375 18.6687 8.45625 19.3813V12.7312H6.08125V10H8.45625V7.8625C8.45625 5.4875 9.88125 4.18125 12.0188 4.18125C13.0875 4.18125 14.1562 4.41875 14.1562 4.41875V6.79375H12.9688C11.7812 6.79375 11.425 7.50625 11.425 8.21875V10H14.0375L13.5625 12.7312H11.3063V19.5C16.0563 18.7875 19.5 14.75 19.5 10Z" fill="black"/>
+                        </svg>
+                    </a>
+                    <a class="footer__social-item" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
+                            <path d="M19.5 2.37031C19.25 1.53906 18.625 0.945313 17.75 0.707813C16.25 0.351563 9.87499 0.351562 9.87499 0.351562C9.87499 0.351562 3.62501 0.351563 2.00001 0.707813C1.12501 0.945313 0.499996 1.53906 0.249996 2.37031C-3.81842e-06 3.91406 0 7.00156 0 7.00156C0 7.00156 3.7998e-06 10.0891 0.375004 11.6328C0.625004 12.4641 1.25 13.0578 2.125 13.2953C3.625 13.6516 10 13.6516 10 13.6516C10 13.6516 16.25 13.6516 17.875 13.2953C18.75 13.0578 19.375 12.4641 19.625 11.6328C20 10.0891 20 7.00156 20 7.00156C20 7.00156 20 3.91406 19.5 2.37031ZM7.99999 9.85156V4.15156L13.25 7.00156L7.99999 9.85156Z" fill="black"/>
+                        </svg>
+                    </a>
+                    <a class="footer__social-item" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
+                            <path d="M1.61865 7.6536C6.71891 5.4315 10.1199 3.96655 11.8216 3.25876C16.6802 1.23788 17.6898 0.886828 18.3479 0.875112C18.4926 0.872686 18.8162 0.908554 19.0258 1.07864C19.2028 1.22226 19.2515 1.41627 19.2748 1.55244C19.2981 1.68861 19.3271 1.9988 19.3041 2.24118C19.0408 5.00761 17.9015 11.721 17.3219 14.8195C17.0767 16.1306 16.5938 16.5701 16.1263 16.6132C15.1103 16.7067 14.3388 15.9417 13.3547 15.2967C11.8149 14.2873 10.945 13.659 9.45035 12.674C7.723 11.5357 8.84277 10.9101 9.82718 9.88764C10.0848 9.62006 14.5613 5.54836 14.6479 5.17899C14.6588 5.1328 14.6688 4.9606 14.5665 4.86968C14.4642 4.77875 14.3132 4.80984 14.2043 4.83457C14.0498 4.86962 11.59 6.49552 6.82462 9.71225C6.12639 10.1917 5.49395 10.4253 4.92731 10.4131C4.30264 10.3996 3.10101 10.0599 2.20773 9.76951C1.11208 9.41335 0.241276 9.22505 0.317103 8.6202C0.356598 8.30515 0.790448 7.98295 1.61865 7.6536Z" fill="black"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
